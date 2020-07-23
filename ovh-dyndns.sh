@@ -2,7 +2,7 @@
 
 # DEFAULT CONFIG
 LIBS="libs"
-GET_IP_URL="http://ipecho.net/plain"
+GET_IP_URL="http://192.168.1.1/sysbus/NMC:getWANStatus"
 CURRENT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 API_TARGET="EU"
 
@@ -55,7 +55,7 @@ requestApi()
 
 updateIp()
 {
-    IP=$(wget -q -O - $GET_IP_URL)
+    IP=$(curl -s -X POST -H "Content-Type: application/json" -d '{"parameters":{}}'  $GET_IP_URL | sed -e 's/.*"IPAddress":"\(.*\)","Remo.*/\1/g')
 }
 
 getJSONString()
