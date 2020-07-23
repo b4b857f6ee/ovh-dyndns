@@ -36,7 +36,7 @@ This crontab will check every minute that the following record targets the right
     home.mydomain.com.    60    IN A   1.2.3.4
 ```
 
-If the target IP address is incorrect, it will update the value, changing the target IP by the current IP (retrieved on http://ipecho.net/)
+If the target IP address is incorrect, it will update the value, changing the target IP by the current IP (retrieved on the Orange box V4 router)
 
 Informations
 ------------
