@@ -1,7 +1,7 @@
 ovh-DynDNS
 =========
 
-Use this script in a cron to update a given A record in your DNS zone, using OVH API.
+Use this script in a cron to update a given A record in your DNS zone, using OVH API. !!!! ONLY FOR USER WITH ORANGE BOX V4 ISP FRENCH !!!!
 
 Initialize
 ----------
