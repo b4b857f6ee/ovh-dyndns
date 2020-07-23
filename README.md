@@ -1,7 +1,9 @@
 ovh-DynDNS
 =========
 
-Use this script in a cron to update a given A record in your DNS zone, using OVH API. !!!! ONLY FOR USER WITH ORANGE BOX V4 ISP FRENCH !!!!
+Use this script in a cron to update a given A record in your DNS zone, using OVH API. 
+
+!!!! ONLY FOR USER WITH ORANGE BOX V4 ISP FRENCH !!!!
 
 Initialize
 ----------
@@ -26,7 +28,7 @@ Configuration
 
 Just add a new crontab to run this script using the right subdomain and domain, for example:
 ```
-    * * * * * /home/denouche/crontabs/ovh-dyndns/ovh-dyndns.sh --domain mydomain.com --subdomain home
+    * * * * * /home/Your_path/ovh-dyndns/ovh-dyndns.sh --domain mydomain.com --subdomain home
 ```
 
 This crontab will check every minute that the following record targets the right IP address :
